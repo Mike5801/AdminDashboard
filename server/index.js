@@ -13,6 +13,11 @@ import salesRoutes from "./routes/sales.js";
 /* DATA IMPORTS */
 // import User from "./models/User.js";
 // import { dataUser } from "./data/index.js"
+// import Product from "./models/Product.js";
+// import ProductStat from "./models/ProductStat.js";
+// import { dataProduct } from "./data/index.js"
+// import { dataProductStat } from "./data/index.js"
+
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -31,10 +36,6 @@ app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
 
-app.use("/", (req, res, next) => {
-    res.json({ message: "hola" })
-});
-
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 9000;
 mongoose.set('strictQuery', false);
@@ -44,7 +45,10 @@ mongoose.connect(process.env.MONGO_URL, {
     dbName: process.env.DB_NAME
 }).then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+    
     // User.insertMany(dataUser)
+    // Product.insertMany(dataProduct);
+    // ProductStat.insertMany(dataProductStat);
 }).catch((error) => {
     console.log(`${error} did not connect`);
 });
