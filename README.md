@@ -1,6 +1,6 @@
 # MERN AdminDashboard
 
-A deployed admin dashboard web application created with the MERN stack. It features visualization of metrics that come from mongoDB by month and date, client and server pagination, responsiveness, and light/dark mode. 
+A deployed admin dashboard web application created with the MERN stack. It features visualization of metrics that come from mongoDB by month and date, client and server pagination, responsive, and light/dark mode. 
 
 The app includes of 10 modules to visualize information about fictional products and users, and its statistics.
 
