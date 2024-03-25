@@ -6,7 +6,7 @@ A deployed admin dashboard web application created with the MERN stack. It featu
 The app includes of 10 modules to visualize information about fictional products and users, and its statistics.
 
 Link: https://admin-dashboard-frontend-lwr8.onrender.com/ <br>
-*As it is deployed using the free tier on render.com, it might take some time to load due to the tier's limits
+*As it is deployed using the free tier on render.com, it might take some time to load due to the tier limits
 
 <div align="center">
   <img alt="Preview of Social App Dark Mode responsive" src="https://i.imgur.com/G2sGIr8.png" />
